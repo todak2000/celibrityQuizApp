@@ -1,3 +1,6 @@
+body {
+    background-color: #83AF9B;
+}
 #left-side{
     background-color:#232323;
     float: left;
@@ -37,4 +40,15 @@ body{
     height: 30px;
     padding-left: 10px;
     border: 2px solid purple;
+}
+input[type="text"]{
+    line-height: 15px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+}
+input[type="text"]:focus{
+    background-color: rgba(221,160,221, 0.5);
+}
+input[type="text"]:hover{
+    background-color: rgba(221,160,221, 0.3);
 }
