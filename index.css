@@ -9,7 +9,7 @@ body {
     color: aquamarine;
 }
 #right-side{
-    background-color:#aaaaaa;
+    background-color: url(images/paper1.png);
     float: right;
     width: 40%;
     height: 100vh;
