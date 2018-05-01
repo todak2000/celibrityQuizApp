@@ -9,13 +9,13 @@ body {
     color: aquamarine;
 }
 #right-side{
-    background-color: url(images/paper1.png);
+    background-image: url(images/paper1.png);
     float: right;
     width: 40%;
     height: 100vh;
 }
 body{
-    margin: 1%;
+    margin: 0;
 }
  .h-three{
     font-family: 'Gugi', cursive;
@@ -48,6 +48,7 @@ input[type="text"]{
 }
 input[type="text"]:focus{
     background-color: rgba(221,160,221, 0.5);
+    color: #fff;
 }
 input[type="text"]:hover{
     background-color: rgba(221,160,221, 0.3);
