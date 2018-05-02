@@ -4,14 +4,14 @@ body {
 #left-side{
     background-color:#232323;
     float: left;
-    width: 60%;
+    width: 55%;
     height: 100vh;
     color: aquamarine;
 }
 #right-side{
     background-image: url(images/paper1.png);
     float: right;
-    width: 40%;
+    width: 45%;
     height: 100vh;
 }
 body{
