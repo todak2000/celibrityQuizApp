@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Celebrity Quiz App</title>
-        <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Titan+One|Gugi|Dosis" rel="stylesheet">
-    </head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+            <title>Celebrity Quiz App</title>
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="css/tooltip.css">
+            <!-- fontawesome script -->
+            <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+            <link href="jqueryui/jquery-ui.css" type="text/css" rel="stylesheet" >
+            <link href="jqueryui/jquery-ui.theme.css" type="text/css" rel="stylesheet" >
+            <link href="jqueryui/jquery-ui.structure.css" type="text/css" rel="stylesheet" >
+            <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Titan+One|Gugi|Dosis|Exo+2|Play|Aldrich|Varela+Round|Yanone+Kaffeesatz" rel="stylesheet">
+        </head>
     <body>
         <div id="left-side">
            
@@ -16,10 +27,16 @@
             <form align="center" id="form">
                 <input id="name" type="text" placeholder="Please Enter Your Name">
                 <br>
-                <a href="index_two.html"><button id="button" type="button" onclick="addName()"> Start Quiz</button></a>
+                <a href="index_two.html"><button id="button" type="button" onclick="addName()" > Start Quiz</button></a>
             </form>
         </div>
 
         <script src="jquery.js"></script>
+        <script src="js/question.js"></script>
+        <script src="js/quiz_controller.js"></script>
+        <script src="js/app.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script src="index.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
