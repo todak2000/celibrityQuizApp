@@ -9,14 +9,15 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op1d')
         ood.style.backgroundColor="#34AFD4";
-        
+        correctSound();
+        nextQuestion();
     })
     
  })
 
  $(document).ready(function(){
     $("div #op1b").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op1a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op1b')
@@ -25,13 +26,17 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op1d')
         ood.style.backgroundColor="#34AFD4";
+        wrongSound();
+        nextQuestion();  
+        $(".lifeline").removeClass("hide_div"); 
+
     })
     
  })
 
  $(document).ready(function(){
     $("div #op1c").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op1a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op1b')
@@ -40,13 +45,15 @@ $(document).ready(function(){
         ooc.style.backgroundColor="red";
         var ood =  document.getElementById('op1d')
         ood.style.backgroundColor="#34AFD4";
-        
+        wrongSound();
+        nextQuestion();
+        $(".lifeline").removeClass("hide_div"); 
     })
     
  })
  $(document).ready(function(){
     $("div #op1d").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op1a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op1b')
@@ -55,7 +62,9 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op1d')
         ood.style.backgroundColor="red";
-        
+        wrongSound();
+        nextQuestion(); 
+        $(".lifeline").removeClass("hide_div");
     })
     
  })
@@ -64,6 +73,7 @@ $(document).ready(function(){
 // QUESTION 2
 $(document).ready(function(){
     $("div #op2a").click(function(){
+
        var ooa =  document.getElementById('op2a')
        ooa.style.backgroundColor="red";
        var oob =  document.getElementById('op2b')
@@ -72,14 +82,16 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op2d')
         ood.style.backgroundColor="#34AFD4";
-        
+        wrongSound();
+        nextQuestion();
+        $(".lifeline").removeClass("hide_div"); 
     })
     
  })
 
  $(document).ready(function(){
     $("div #op2b").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op2a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op2b')
@@ -88,13 +100,16 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op2d')
         ood.style.backgroundColor="#34AFD4";
+        wrongSound();
+        nextQuestion();
+        $(".lifeline").removeClass("hide_div"); 
     })
     
  })
 
  $(document).ready(function(){
     $("div #op2c").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op2a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op2b')
@@ -103,13 +118,14 @@ $(document).ready(function(){
         ooc.style.backgroundColor="green";
         var ood =  document.getElementById('op2d')
         ood.style.backgroundColor="#34AFD4";
-        
+        correctSound();
+        nextQuestion();
     })
     
  })
  $(document).ready(function(){
-    $("div #op2d").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+    $("div #op2d").click(function(){ 
+
         var ooa =  document.getElementById('op2a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op2b')
@@ -118,7 +134,9 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op2d')
         ood.style.backgroundColor="red";
-        
+        wrongSound();
+        nextQuestion();
+        $(".lifeline").removeClass("hide_div");
     })
     
  })
@@ -127,6 +145,7 @@ $(document).ready(function(){
 // QUESTION 3
 $(document).ready(function(){
     $("div #op3a").click(function(){
+
        var ooa =  document.getElementById('op3a')
        ooa.style.backgroundColor="red";
        var oob =  document.getElementById('op3b')
@@ -135,14 +154,16 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op3d')
         ood.style.backgroundColor="#34AFD4";
-        
+        wrongSound();
+        nextQuestion(); 
+        $(".lifeline").removeClass("hide_div");
     })
     
  })
 
  $(document).ready(function(){
     $("div #op3b").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op3a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op3b')
@@ -151,13 +172,16 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op3d')
         ood.style.backgroundColor="#34AFD4";
+        wrongSound();
+        nextQuestion();
+        $(".lifeline").removeClass("hide_div"); 
     })
     
  })
 
  $(document).ready(function(){
     $("div #op3c").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op3a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op3b')
@@ -166,13 +190,15 @@ $(document).ready(function(){
         ooc.style.backgroundColor="red";
         var ood =  document.getElementById('op3d')
         ood.style.backgroundColor="#34AFD4";
-        
+        wrongSound();
+        nextQuestion(); 
+        $(".lifeline").removeClass("hide_div");
     })
     
  })
  $(document).ready(function(){
     $("div #op3d").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op3a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op3b')
@@ -181,7 +207,8 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op3d')
         ood.style.backgroundColor="green";
-        
+        correctSound();
+        nextQuestion();
     })
     
  })
@@ -190,6 +217,7 @@ $(document).ready(function(){
 // QUESTION 4
 $(document).ready(function(){
     $("div #op4a").click(function(){
+
        var ooa =  document.getElementById('op4a')
        ooa.style.backgroundColor="red";
        var oob =  document.getElementById('op4b')
@@ -198,14 +226,16 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op4d')
         ood.style.backgroundColor="#34AFD4";
-        
+        wrongSound();
+        nextQuestion(); 
+        $(".lifeline").removeClass("hide_div");
     })
     
  })
 
  $(document).ready(function(){
     $("div #op4b").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+       
         var ooa =  document.getElementById('op4a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op4b')
@@ -214,13 +244,15 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op4d')
         ood.style.backgroundColor="#34AFD4";
+        correctSound();
+        nextQuestion(); 
     })
     
  })
 
  $(document).ready(function(){
     $("div #op4c").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op4a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op4b')
@@ -229,13 +261,15 @@ $(document).ready(function(){
         ooc.style.backgroundColor="red";
         var ood =  document.getElementById('op4d')
         ood.style.backgroundColor="#34AFD4";
-        
+        wrongSound();
+        nextQuestion(); 
+        $(".lifeline").removeClass("hide_div");
     })
     
  })
  $(document).ready(function(){
     $("div #op4d").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op4a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op4b')
@@ -244,7 +278,9 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op4d')
         ood.style.backgroundColor="red";
-        
+        wrongSound();
+        nextQuestion();
+        $(".lifeline").removeClass("hide_div"); 
     })
     
  })
@@ -253,6 +289,7 @@ $(document).ready(function(){
 // QUESTION 5
 $(document).ready(function(){
     $("div #op5a").click(function(){
+
        var ooa =  document.getElementById('op5a')
        ooa.style.backgroundColor="red";
        var oob =  document.getElementById('op5b')
@@ -261,14 +298,17 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op5d')
         ood.style.backgroundColor="#34AFD4";
-        
+        wrongSound();
+        nextQuestion(); 
+        $(".lifeline").removeClass("hide_div");
+
     })
     
  })
 
  $(document).ready(function(){
     $("div #op5b").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op5a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op5b')
@@ -277,13 +317,16 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op5d')
         ood.style.backgroundColor="#34AFD4";
+        wrongSound();
+        nextQuestion(); 
+        $(".lifeline").removeClass("hide_div");
     })
     
  })
 
  $(document).ready(function(){
     $("div #op5c").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op5a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op5b')
@@ -292,13 +335,14 @@ $(document).ready(function(){
         ooc.style.backgroundColor="green";
         var ood =  document.getElementById('op5d')
         ood.style.backgroundColor="#34AFD4";
-        
+        correctSound();
+        nextQuestion();
     })
     
  })
  $(document).ready(function(){
     $("div #op5d").click(function(){
-        $(".lifeline").removeClass("hide_div"); 
+
         var ooa =  document.getElementById('op5a')
         ooa.style.backgroundColor="#34AFD4";
         var oob =  document.getElementById('op5b')
@@ -307,8 +351,82 @@ $(document).ready(function(){
         ooc.style.backgroundColor="#34AFD4";
         var ood =  document.getElementById('op5d')
         ood.style.backgroundColor="red";
-        
+        wrongSound();
+        nextQuestion();
+        $(".lifeline").removeClass("hide_div"); 
+     
     })
     
  })
 // END OF QUESTION 5
+
+// function to get next random question
+function nextQuestion(){
+   var next = Math.floor(Math.random()*6);
+   console.log(next);
+   var question = $(".pol_questions0"+next);
+   $(".img-circle").addClass("hide_div");
+   $(".politic:not(question)").addClass("hide_div");
+    question.removeClass("hide_div");
+}
+// for ok button modal
+function nextQuestions(){
+    var previousChild=  $('.politics:nth-child(1)')
+    previousChild.addClass("hide_div");
+    previousChild.hide();
+     var next = Math.floor(Math.random()*6);
+     console.log(next);
+     var question = $(".pol_questions0"+next);
+     question.removeClass("hide_div");
+     $(".img-circle").addClass("hide_div");
+     function zero(){
+      if (next == 0){
+          var question = $(".pol_questions01");
+          question.removeClass("hide_div");
+         
+          $(".img-circle").addClass("hide_div");
+      }
+  }
+  }
+  
+
+
+
+// FUNCTIONS FOR AUDIO INPUT
+// function for when the correct answer is clicked
+function correctSound(){
+    var Csound = new sound ("audio/correct_score.mp3");
+    Csound.play();
+    setTimeout(function() {
+      $(".bg-bubbles").removeClass("hide_div");
+       }, 20);
+}
+// function for when the wrong answer is clicked
+function wrongSound(){
+    var Csound = new sound ("audio/wrong.mp3");
+    Csound.play();
+}
+// function for when the time is up
+function TimeUpSound(){
+    var Csound = new sound ("audio/timeup.mp3");
+    Csound.play();
+}
+// function for when a player becomes a scholar
+function ScholarSound(){
+    var Csound = new sound ("audio/scholar_sound.mp3");
+    Csound.play();
+}
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+        this.sound.play();
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }
+}
