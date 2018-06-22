@@ -1,17 +1,35 @@
-function addName(){
-    alert("hi");
-    var nameInput = document.getElementById("name").value;
-    var hname = document.getElementById("h-name");
-    hname.append(nameInput); 
-}
+// function addName(){
+//     alert('hi');
+//     var nameInput = $('#name').val();
+//     var hname = document.getElementById('nameing');
+//     hname.innerHTML = nameInput; 
+    
+// }
 
 $(document).ready(function(){
    $(".info_button").click(function(){
     $(".politics").removeClass("hide_div");
     nextQuestions();
    })
+   $('#pol').click(function(){
+    alert('hi');
+    var nameInput = $("#nameIn").val();
+    var h_name = $("#h-name");
+    var hname = $('#nameing');
+    var test = $('#test');
+    h_name.append("Hello "+$("#nameIn").val());
+    hname.append("Hello "+$("#nameIn").val());
 
+   })
+   
 })
+function buttonHome(){
+    var nameInput = $("#nameIn").val();
+    console.log(nameInput);
+}
+// var score_table = $(".score");
+// score_table.fadeIn();
+// score_table.html(score);
 // Next button on question 1
 // $(document).ready(function(){
 //     $("#next_pol01").click(function(){
