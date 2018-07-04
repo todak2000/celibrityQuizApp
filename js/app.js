@@ -12,6 +12,17 @@ function correct(){
         alert("CONGRATULATIONS, you are now a rookie");
      }
 }
+function useLifeline(){
+    console.log("Lifeline used, hence score reduced by 5%")
+    scoreLifeLine = score * 0.1;
+    score = Math.floor(score - scoreLifeLine);
+    alert(score);
+    console.log("Your current score is: "+ score);
+     var score_table = $(".score");
+     score_table.fadeIn();
+     score_table.html(score);
+     
+}
 function wrong(){
     console.log("wrong score function was effected")
     score = score -3;
@@ -274,54 +285,271 @@ $(document).ready(function(){
  })
 // END OF QUESTION 5
 // *******************************
-// for (var numbers=[],i=0;i<6;++i) numbers[i]=i;
+// QUESTION 6
+$(document).ready(function(){
+    $("div #op6a").click(function(){
+        correctSound();
+        nextQuestion();
+        correct();
+        console.log("correct answer");
+        
+    })
+    
+})
 
-// function shuffle(array) {
-//   var tmp, current, top = array.length;
-//   if(top) while(--top) {
-//     current = Math.floor(Math.random() * (top + 1));
-//     tmp = array[current];
-//     array[current] = array[top];
-//     array[top] = tmp;
-//   }
-//   return array;
-// }
+ $(document).ready(function(){
+    $("div #op6b").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong(); 
+        $(".lifeline").removeClass("hide_div"); 
 
-// numbers = shuffle(numbers);
+    })
+    
+})
+
+ $(document).ready(function(){
+    $("div #op6c").click(function(){
+        wrongSound();
+        nextQuestion();
+        wrong();
+        $(".lifeline").removeClass("hide_div"); 
+    })
+    
+})
+ $(document).ready(function(){
+    $("div #op6d").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+    })
+    
+})
+// END OF QUESTION 6
+
+// QUESTION 7
+
+$(document).ready(function(){
+    $("div #op7a").click(function(){
+        correctSound();
+        nextQuestion();
+        correct();
+        console.log("correct answer");
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op7b").click(function(){
+        wrongSound();
+        nextQuestion();  
+        wrong();
+        $(".lifeline").removeClass("hide_div"); 
+
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op7c").click(function(){
+        wrongSound();
+        nextQuestion();
+        wrong();
+        $(".lifeline").removeClass("hide_div"); 
+    })
+    
+ })
+ $(document).ready(function(){
+    $("div #op7d").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+    })
+    
+ })
+// END OF QUESTION 7
+
+// QUESTION 8
+$(document).ready(function(){
+    $("div #op8a").click(function(){
+        wrongSound();
+        nextQuestion();
+        wrong();
+        $(".lifeline").removeClass("hide_div"); 
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op8b").click(function(){
+        wrongSound();
+        nextQuestion();
+        wrong();
+        $(".lifeline").removeClass("hide_div"); 
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op8c").click(function(){
+        correctSound();
+        nextQuestion();
+        correct();
+        console.log("correct answer");
+    })
+    
+ })
+ $(document).ready(function(){
+    $("div #op8d").click(function(){ 
+        wrongSound();
+        nextQuestion();
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+    })
+    
+ })
+// END OF QUESTION 8
+
+// QUESTION 9
+$(document).ready(function(){
+    $("div #op9a").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op9b").click(function(){
+        wrongSound();
+        nextQuestion();
+        wrong();
+        $(".lifeline").removeClass("hide_div"); 
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op9c").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+    })
+    
+ })
+ $(document).ready(function(){
+    $("div #op9d").click(function(){
+        correctSound();
+        nextQuestion();
+        correct();
+        console.log("correct answer");
+    })
+    
+ })
+// END OF QUESTION 9
+
+// QUESTION 10
+$(document).ready(function(){
+    $("div #op10a").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op10b").click(function(){
+        correctSound();
+        nextQuestion(); 
+        correct();
+        console.log("correct answer");
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op10c").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+    })
+    
+ })
+ $(document).ready(function(){
+    $("div #op10d").click(function(){
+        wrongSound();
+        nextQuestion();
+        wrong();
+        $(".lifeline").removeClass("hide_div"); 
+    })
+    
+ })
+// END OF QUESTION 10
+
+// QUESTION 11
+$(document).ready(function(){
+    $("div #op11a").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op11b").click(function(){
+        wrongSound();
+        nextQuestion(); 
+        wrong();
+        $(".lifeline").removeClass("hide_div");
+    })
+    
+ })
+
+ $(document).ready(function(){
+    $("div #op11c").click(function(){
+        correctSound();
+        nextQuestion();
+        correct();
+        console.log("correct answer");
+    })
+    
+ })
+ $(document).ready(function(){
+    $("div #op11d").click(function(){
+        wrongSound();
+        nextQuestion();
+        wrong();
+        $(".lifeline").removeClass("hide_div"); 
+     
+    })
+    
+ })
+// END OF QUESTION 11
+
+
 function nextQuestion(){
-//   if(numbers.length ==0){
-//       console.log("Starting over again");
-//       generateNumbers();
-//   }
-//   var rand = Math.floor(Math.random()*numbers.length);
-//   var num = numbers[rand];
-//   console.log(num);
-var next = Math.floor(Math.random()*6);
-console.log(next);
-var question = $(".pol_questions0"+next);
 
-    // console.log("Question "+ num+" is picked")
-    // numbers.splice(num,1);
-    // console.log(numbers.splice(num,1));
+var next = Math.floor(Math.random()*11);
+console.log(next);
+var question = $(".pol_questions0"+next); 
     $(".img-circle").addClass("hide_div");
     $(".politic:not(question)").addClass("hide_div");
      question.removeClass("hide_div");
      
 }
 // **************************************************
-// function nextQuestiona(){
-     
-//     var next = Math.floor(Math.random()*6);
-//     console.log(next);
-//     var question = $(".pol_questions0"+next);
-//         $(".img-circle").addClass("hide_div");
-//         $(".politic:not(question)").addClass("hide_div");
-//          question.removeClass("hide_div");
-     
-        
-//     }
 
-// for ok button modal
 function nextQuestions(){
     var previousChild=  $('.politics:nth-child(1)')
     previousChild.addClass("hide_div");
