@@ -146,6 +146,14 @@ input[type="text"]:hover{
     z-index: 20;
   
 }
+.question{
+    font-size: 16px;
+    
+}
+.options{
+    font-weight:900;
+    
+}
 @keyframes fadeIn {
     0%   {background-color:aliceblue; left:-1000px; top:0px;}
     100%  {background-color:aliceblue; left:0px; top:0px;}
@@ -169,6 +177,34 @@ input[type="text"]:hover{
 .lifeline{
     animation: eline 5s infinite;
     margin-top: 30%;
+    width: 100px; 
+    height: 100px; 
+    background: #ffffff; 
+    z-index:100;
+    float: left;
+    border-radius:10px;
+}
+.lifeline>img{
+    width: 50px; 
+    height: 50px;
+    margin:10px;
+}
+.lifeline>p{
+   font-family: 'Aldrich', sans-serif; 
+   font-weight:900;
+}
+.score{
+    height:100px;
+    width: auto; 
+    font-size:70px;
+    padding:10px 20px 10px 20px; 
+    border: 2px solid aquamarine; 
+    border-radius:20px;
+}
+.img-circle{
+    margin-top: 10px;
+     height:300px;
+      width:300px;
 }
 @keyframes eline {
     0%   {background-color:red; }
@@ -187,8 +223,9 @@ input[type="text"]:hover{
     margin-top: 10px;
   }
   .containea{
-    width : 600px;
-    background-color: #e0e0e0;
+     width: 100px;
+     border-radius:10px;
+ 
   }
 
   /* BUBBLES */
