@@ -558,17 +558,18 @@ function nextQuestions(){
     
   }
   
-
-
+ 
 
 // FUNCTIONS FOR AUDIO INPUT
 // function for when the correct answer is clicked
 function correctSound(){
     var Csound = new sound ("audio/correct_score.mp3");
     Csound.play();
-    setTimeout(function() {
-      $(".bg-bubbles").removeClass("hide_div");
-       }, 20);
+    setTimeout(function(){ $('.bg-bubbles').fadeIn(); }, 1000);
+    setTimeout(function(){ $('.bg-bubbles').fadeOut('slow'); }, 4000);
+    // setTimeout(function() {
+    //   $(".bg-bubbles").removeClass("hide_div");
+    //    }, 20);
 }
 // function for when the wrong answer is clicked
 function wrongSound(){
