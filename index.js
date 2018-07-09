@@ -9,6 +9,7 @@ $(document).ready(function(){
     $("#pol_mobile").click(function(){
      $("#right-side_two").removeClass("hidden-xs");
      $(".lefty").addClass("hide_div");
+     $(".lefto").removeClass("hide_div");
      $(".containea").removeClass("hide_div");
      $(".lifeline").removeClass("hide_div");
      nextQuestions();
@@ -19,6 +20,7 @@ $(document).ready(function(){
  $(document).ready(function(){
     $("#end_quiz").click(function(){
      $("#right-side_two").addClass("hidden-xs");
+     $(".lefto").addClass("hide_div");
      $(".lefty").removeClass("hide_div");
      $(".containea").addClass("hide_div");
      $(".lifeline").addClass("hide_div");

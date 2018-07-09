@@ -1,5 +1,5 @@
 
-@media (max-width: 48em) {
+@media (max-width:980px) {
 	body{
 		height: auto;
 		background: #232323;
@@ -8,7 +8,7 @@
 		background-color:#232323;
 		width: 100%;
 		height: auto;
-		padding-left:0px;
+		margin-bottom:10px;
 		color: aquamarine;
 	}
 	.lefto{
@@ -101,5 +101,13 @@
 		margin-top: 10px;
 		 height:150px;
 		  width:150px;
+	}
+	.btn-group-lg > .btn, .btn-lg {
+		padding: 10px 16px;
+		margin-left:20px;
+		margin-right:20px;
+		font-size: 14px;
+		line-height: 1.0;
+		border-radius: 6px;
 	}
 }
