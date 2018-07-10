@@ -161,7 +161,7 @@ input[type="text"]:hover{
     display: none;
 }
 
-.politics{
+.politics, .summary, .summary-scholar, .summary-expert{
     width: 80%;
     margin: auto;
     height: 680px;

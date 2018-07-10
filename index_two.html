@@ -19,29 +19,13 @@
         
     </head>
     <body>
-            <!-- <div id="left-side_two" class="hidden-lg hidden-md hidden-sm">
-                    <h1 id="h-name" align= "center"></h1>
-                    <h1 id="h-one" align= "center">Welcome to <br>Celebrity Quiz<br><br>Please Choose a Section to Start</h1>
-                   <div class="flyin">
-                        <div class="test btn form-control" id="pol" align="center" >POLITICAL CELEBRITIES</div>
-                   </div>
-                   <div class="flyin1">
-                        <div class="test btn form-control"id="spo" align="center">SPORT CELEBRITIES</div>
-                   </div>
-                   <div class="flyin2">
-                        <div class="test btn form-control" id="mus"align="center">MUSIC CELEBRITIES</div>
-                   </div>
-                   <div class="flyin3">
-                        <div class="test btn form-control" id="tec" align="center">TECHONLOGY CELEBRITIES</div>
-                   </div>
-                    
-                </div> -->
+            
         <div id="left-side_two" class="col-xs-12 hidden-lg hidden-md">
             <div class="lefty">
-            <h1 id="h-one" align= "center" class="hidden-lg hidden-md">Welcome to <br>Celebrity Quiz<br><hr><span id="spano">Please Choose a Section to Start</span></h1>
+            <h1 id="h-one" align= "center" class="hidden-lg hidden-md btn form-control " style="height:10vh; background: rgba(127, 255, 212, 0.5);">Celebrity Quiz</h1>
             <div id="instructions" align= "center" class="hidden-lg hidden-md">
-                <hr>
-                    <h5 align="justify" style="padding-left:10%; padding-right:10%; background:#222222; color: #fff;font-size:10px; font-family: 'Varela Round', sans-serif;">Welcome! <span id="nameing" style="color: peru;font-size:16px; font-family: 'Varela Round', sans-serif;"></span><br> I know you are eager to earn the your Badge and be an Erudite Scholar. To do that, you need to know:<br>
+                
+                    <h5 align="justify" style="padding-left:10%; padding-right:10%; background:transparent; color: aquamarine;font-size:10px; font-family: 'Varela Round', sans-serif;">Welcome! <span id="nameing" style="color: peru;font-size:16px; font-family: 'Varela Round', sans-serif;"></span><br> I know you are eager to earn the your Badge and be an Erudite Scholar. To do that, you need to know:<br>
                         <ul>
                             <li>There are three levels for you to overcome to earn a section Badge
                                 <ol>
@@ -52,27 +36,27 @@
                             </li>
                             <li>You will need to reach a minimum level of Scholar in atleast three sections to earn a Scholar Badge</li>
                             <li>You will also need to reach a minimum level of Expert in atleast four sections to earn an Erudite Badge and be awarded your certificate</li>
-                            <li>Remember, you have 20 seconds to answer each question</li>
-                            <li>Onclicking the wrong Answer for the first time, your lifeline pops out fo use at your disgresion</li>
-                            <li>At any point you make use of the lifeline, your points drops by 10%</li>
-
+                            <li>Onclicking the wrong Answer for the first time, your lifeline pops out for use at your disgresion</li>
+                            <li>At any point you need to use the lifeline, click on the lifeline button</li>
                         </ul><br>
                         Welcome, once again to this fun quiz and adventure. Lets get you started right away!</h5>
-                    
+                        <div  class="btn btn-md  btn-info hidden-md hidden-lg pull-center" id="pre_quiz"style="z-index: 30; ">Next</div>
             </div>
-            <h1 id="h-one" align= "center" class="hidden-xs hidden-sm">Please Choose a Section to Start</h1>
-           <div class="flyin">
-                <div class="test btn form-control" id="pol_mobile" align="center">POLITICAL CELEBRITIES</div>
-           </div>
-           <div class="flyin1">
-                <div class="test btn form-control"id="spo" align="center">SPORT CELEBRITIES</div>
-           </div>
-           <div class="flyin2">
-                <div class="test btn form-control" id="mus"align="center">MUSIC CELEBRITIES</div>
-           </div>
-           <div class="flyin3">
-                <div class="test btn form-control" id="tec" align="center">TECHONLOGY CELEBRITIES</div>
-           </div>
+            <div class="hidden" id="select">
+                    <h1 id="h-one" align= "center" style="margin-bottom:5px;">Please Choose a Section to Start</h1>
+                <div class="flyin">
+                        <div class="test btn form-control" id="pol_mobile" align="center">POLITICAL CELEBRITIES</div>
+                </div>
+                <div class="flyin1">
+                        <div class="test btn form-control"id="spo" align="center">SPORT CELEBRITIES</div>
+                </div>
+                <div class="flyin2">
+                        <div class="test btn form-control" id="mus"align="center">MUSIC CELEBRITIES</div>
+                </div>
+                <div class="flyin3">
+                        <div class="test btn form-control" id="tec" align="center">TECHONLOGY CELEBRITIES</div>
+                </div>
+            </div>
         </div>
         <div class="lefto hide_div">
             <div  class="containea hide_div" >
@@ -107,7 +91,7 @@
                 </div>
             </div>
         <div id="right-side_two" class="col-xs-12 hidden-xs">
-            <button class="lifeline hide_div hidden-xs hidden-sm" data-toggle="modal" data-target="#myModal" style="width: 100px; height: 100px; background: #ffffff; z-index:100;float: left; border-radius:10px;"><img align = "center"style="width: 50px; height: 50px; margin:10px;" src="images/lifeline.png">
+            <button class="lifeline right-timeline hide_div hidden-xs hidden-sm" data-toggle="modal" data-target="#myModal" style="width: 100px; height: 100px; background: #ffffff; z-index:100;float: left; border-radius:10px;"><img align = "center"style="width: 50px; height: 50px; margin:10px;" src="images/lifeline.png">
                 <p style="font-family: 'Aldrich', sans-serif; font-weight:900;">LIFE LINE</p>
             </button>
             
@@ -115,7 +99,7 @@
                 <!-- question 0 -->
                 <div class="pol_questions00 politic hide_div" style=" width:100%; height: 80%;z-index: 30;">
                         <div align="center" style="margin-top: 30px;"><img  class="img-circle hide_div" src="images/lincon.jpg"></div>
-                        <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">An astute politician. One of the mpst revered and respected American Presidents. He defined Democracy as "the government of the people, by the people and for the people". WHo am he?</div>
+                        <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">An astute politician. One of the most revered and respected American Presidents. He defined Democracy as "the government of the people, by the people and for the people". Who is he?</div>
                         <div class="options"style="margin:10px; font-family: 'Aldrich', sans-serif;">
                             <div class="option1 btn-info btn-lg" id="op0a" style="margin-bottom: 5px;z-index: 30;"> Abraham Lincoln</div>
                             <div class="option1 btn-info btn-lg" id="op0b" style="margin-bottom: 5px;z-index: 30;">Thomas Jerfferson</div>
@@ -128,8 +112,7 @@
                 <!-- question 1 -->
                 <div class="pol_questions01 politic hide_div" style=" width:100%; height: 80%;z-index: 30;">
                     <div align="center" style="margin-top: 30px;"><img  class="img-circle hide_div" src="images/idi-amin.png"></div>
-                    <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">He was famous for the alledged role he played in the Mix-Maz fraudgate which occured in the 1920s.
-                    He held sway in power for Nineteen years before assasinated by his secretary. Who is He?</div>
+                    <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">A despotic and cruel dictator per excellence; Who bestowed on himself the highest Military rank in the world "Field Marshal". He is one of the top most brutal African dictator. He died in exile (Saudi Arabia). Who is he?</div>
                     <div class="options"style="margin:10px; font-family: 'Aldrich', sans-serif;">
                         <div class="option1 btn-info btn-lg" id="op1a" style="margin-bottom: 5px;z-index: 30;"> Idi Amin</div>
                         <div class="option1 btn-info btn-lg" id="op1b" style="margin-bottom: 5px;z-index: 30;">Sani Abacha</div>
@@ -143,7 +126,7 @@
                   <div class="pol_questions02 politic hide_div" style=" width:100%; height: 80%;">
                         <div align="center" style="margin-top: 30px;"><img  class="img-circle hide_div" src="images/dubai.png"></div>
                         <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">He was pivotal to the transformation of a desert to a Tourist center; He is a Global leader from a minor region. He also drove the construction of Burj Khalifa, the tallest building in the world.
-                            The Vice President and Prime Minister of his Desert-turned-Tourist Center Country and  Who is this Political icon?</div>
+                            The Vice President and Prime Minister of his Desert-turned-Tourist Center Country. Who is this Political icon?</div>
                         <div class="options"style="margin:10px; font-family: 'Aldrich', sans-serif;">
                             <div class="option1 btn-info btn-lg" id="op2a"  style="margin-bottom: 5px;"> General Fidel Castro </div>
                             <div class="option1 btn-info btn-lg" id="op2b" style="margin-bottom: 5px;">Tamim bin Hamad Al Thani</div>
@@ -183,7 +166,7 @@
                  <!-- question 5 -->
                  <div class="pol_questions05 politic hide_div" style=" width:100%; height: 80%;">
                     <div align="center" style="margin-top: 30px;"><img  class="img-circle hide_div" src="images/thatcher.jpg"></div>
-                    <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">She won three consecutive terms of office in two decades and became the only British Prime Minister in the twentieth century to do so. One of the most influential Prime Ministers of Britain, she was also the most debated stateswomen of the century, earning both respect and hatred from the public. She is usually called "" the IRON LADY". WHo is she?</div>
+                    <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">She won three consecutive terms of office in two decades and became the only British Prime Minister in the twentieth century to do so. One of the most influential Prime Ministers of Britain, she was also the most debated stateswomen of the century, earning both respect and hatred from the public. She is usually called the "IRON LADY". WHo is she?</div>
                     <div class="options"style="margin:10px; font-family: 'Aldrich', sans-serif;">
                         <div class="option1 btn-info btn-lg" id="op5a" style="margin-bottom: 5px;"> Tammy Duckworth</div>
                         <div class="option1 btn-info btn-lg" id="op5b" style="margin-bottom: 5px;">Angela Merkel</div>
@@ -210,7 +193,7 @@
             <!-- question 7 -->
             <div class="pol_questions07 politic hide_div" style=" width:100%; height: 80%;z-index: 30;">
                 <div align="center" style="margin-top: 30px;"><img  class="img-circle hide_div" src="images/stalin.jpg"></div>
-                <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">He single handedly elevated Russia from a backward country to a major world power.A controversial Russian dictator who led Russia to the World war II and subsequently initiated the development of Nucelar bomb making USSR the second country to develop the nuclear bomb. In spite of his ruthlessness, he was a popular and well respected leader. WHats his name?</div>
+                <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">He single handedly elevated Russia from a backward country to a major world power.A controversial Russian dictator who led Russia to the World war II and subsequently initiated the development of Nucelar bomb making USSR the second country to develop the nuclear bomb. In spite of his ruthlessness, he was a popular and well respected leader. Whats his name?</div>
                 <div class="options"style="margin:10px; font-family: 'Aldrich', sans-serif;">
                     <div class="option1 btn-info btn-lg" id="op7a" style="margin-bottom: 5px;z-index: 30;"> Joseph Stalin</div>
                     <div class="option1 btn-info btn-lg" id="op7b" style="margin-bottom: 5px;z-index: 30;">Vladimir Lenin</div>
@@ -236,7 +219,7 @@
                 <!-- question 9 -->
             <div class="pol_questions09 politic hide_div" style=" width:100%; height: 80%;">
                 <div align="center" style="margin-top: 30px;"><img  class="img-circle hide_div" src="images/eliza.jpg"></div>
-                <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">Daughter of Henry VIII by second wife, Anne Boleyn. Was the childless Elizabeth was the fifth and last monarch of the Tudor dynasty. Popularly known as the "VIRGIN QUEEN". Who is she?</div>
+                <div align="justify" class="question" style="margin: 10px; font-family: 'Play', sans-serif;">Daughter of Henry VIII by second wife, Anne Boleyn. The fifth and last monarch of the Tudor dynasty. Popularly known as the "VIRGIN QUEEN". Who is she?</div>
                 <div class="options"style="margin:10px; font-family: 'Aldrich', sans-serif;">
                     <div class="option1 btn-info btn-lg" id="op9a" style="margin-bottom: 5px;">Cathrine IV of England</div>
                     <div class="option1 btn-info btn-lg" id="op9b" style="margin-bottom: 5px;">Elizabeth II of England</div>
@@ -273,6 +256,30 @@
             </div>
             <!-- End of Question 11 -->
                 
+            </div>
+            <!-- summary -->
+            <div class="summary hide_div" style=" width:auto; height: auto;">
+                
+                <div align="center" class="question" style="margin: 10px;padding: 10%; font-family: 'Play', sans-serif; top: 10%;">CONGRATULATIONS!<br> YOU ARE NOW A ROOKIE</div>
+            
+                <div  class="btn btn-warning btn-md " id="end_sum" style="margin-top:50px; margin-left: 20%; margin-bottom: 5%;">End Quiz</div>
+                <div  class="btn btn-warning btn-md  pull-right" id="next_sum" style="margin-top:50px; margin-right: 20%; margin-bottom: 5%;">Next Level</div>
+            </div>
+            <!-- summary-scholar -->
+            <div class="summary-scholar hide_div" style=" width:auto; height: auto;">
+                
+                <div align="center" class="question" style="margin: 10px;padding: 10%; font-family: 'Play', sans-serif; top: 10%;">CONGRATULATIONS!<br> YOU ARE NOW A SCHOLAR</div>
+            
+                <div  class="btn btn-warning btn-md " id="end_sum1" style="margin-top:50px; margin-left: 20%; margin-bottom: 5%;">End Quiz</div>
+                <div  class="btn btn-warning btn-md  pull-right" id="next_sum1" style="margin-top:50px; margin-right: 20%; margin-bottom: 5%;">Next Level</div>
+            </div>
+            <!-- summary-expert -->
+            <div class="summary-expert hide_div" style=" width:auto; height: auto;">
+                
+                <div align="center" class="question" style="margin: 10px;padding: 10%; font-family: 'Play', sans-serif; top: 10%;">CONGRATULATIONS!<br> YOU ARE NOW AN EXPERT</div>
+            
+                <div  class="btn btn-warning btn-md " id="end_sum2" style="margin-top:50px; margin-left: 20%; margin-bottom: 5%;">End Quiz</div>
+                <div  class="btn btn-warning btn-md  pull-right" id="next_sum2" style="margin-top:50px; margin-right: 20%; margin-bottom: 5%;">Next Level</div>
             </div>
             <div  class="btn btn-warning btn-md  form-control hidden-md hidden-lg hidden-sm" id="end_quiz"style="z-index: 30;">End Quiz</div>
 

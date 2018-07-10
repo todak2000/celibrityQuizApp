@@ -3,20 +3,40 @@ var score = 0;
 function correct(){
     console.log("correct score function was effected")
     score = score + 5;
-    alert(score);
     console.log("Your current score is: "+ score);
      var score_table = $(".score");
      score_table.fadeIn();
      score_table.html(score);
-     if(score >=15){
-        alert("CONGRATULATIONS, you are now a rookie");
+     if(score >=5 && score<=10){
+        $(".summary").removeClass("hide_div");
+        $(".politics").addClass("hide_div");
+        $("#end_quiz").addClass("hide_div");
+        $(".right-timeline").addClass("hide_div");
      }
+     if(score >=15 && score<=20){
+        $(".summary-scholar").removeClass("hide_div");
+        $(".politics").addClass("hide_div");
+        $("#end_quiz").addClass("hide_div");
+        $(".right-timeline").addClass("hide_div");
+     }
+     if(score >=25 && score<=30){
+        $(".summary-expert").removeClass("hide_div");
+        $(".summary").addClass("hide_div");
+        $(".politics").addClass("hide_div");
+        $("#end_quiz").addClass("hide_div");
+        $(".right-timeline").addClass("hide_div");
+     }
+}
+function resetScore(){
+    score = 0;
+    var score_table = $(".score");
+     score_table.fadeIn();
+     score_table.html(score);
 }
 function useLifeline(){
     console.log("Lifeline used, hence score reduced by 5%")
     scoreLifeLine = score * 0.1;
     score = Math.floor(score - scoreLifeLine);
-    alert(score);
     console.log("Your current score is: "+ score);
      var score_table = $(".score");
      score_table.fadeIn();
@@ -540,7 +560,7 @@ $(document).ready(function(){
 
 function nextQuestion(){
 
-var next = Math.floor(Math.random()*11);
+var next = Math.floor(Math.random()*12);
 console.log(next);
 var question = $(".pol_questions0"+next); 
     $(".img-circle").addClass("hide_div");
@@ -566,10 +586,8 @@ function correctSound(){
     var Csound = new sound ("audio/correct_score.mp3");
     Csound.play();
     setTimeout(function(){ $('.bg-bubbles').fadeIn(); }, 1000);
-    setTimeout(function(){ $('.bg-bubbles').fadeOut('slow'); }, 4000);
-    // setTimeout(function() {
-    //   $(".bg-bubbles").removeClass("hide_div");
-    //    }, 20);
+    setTimeout(function(){ $('.bg-bubbles').fadeOut('slow'); }, 2000);
+   
 }
 // function for when the wrong answer is clicked
 function wrongSound(){

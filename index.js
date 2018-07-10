@@ -6,6 +6,15 @@
     
 // }
 $(document).ready(function(){
+    $("#pre_quiz").click(function(){
+     $("#select").removeClass("hidden");
+     $("#instructions").addClass("hide_div");
+     
+    })
+   
+    
+ })
+$(document).ready(function(){
     $("#pol_mobile").click(function(){
      $("#right-side_two").removeClass("hidden-xs");
      $(".lefty").addClass("hide_div");
@@ -18,16 +27,110 @@ $(document).ready(function(){
     
  })
  $(document).ready(function(){
+    $("#next_sum").click(function(){
+     $("#right-side_two").removeClass("hidden-xs");
+     $(".lefty").addClass("hide_div");
+     $(".lefto").removeClass("hide_div");
+     $(".containea").removeClass("hide_div");
+     $(".lifeline").removeClass("hide_div");
+     $(".summary").addClass("hide_div");
+     $(".summary-scholar").addClass("hide_div");
+     $(".summary-expert").addClass("hide_div");
+        $(".politics").removeClass("hide_div");
+        $("#end_quiz").removeClass("hide_div");
+        $(".right-timeline").addClass("hide_div");
+     nextQuestions();
+    })
+    $("#next_sum1").click(function(){
+        $("#right-side_two").removeClass("hidden-xs");
+        $(".lefty").addClass("hide_div");
+        $(".lefto").removeClass("hide_div");
+        $(".containea").removeClass("hide_div");
+        $(".lifeline").removeClass("hide_div");
+        $(".summary").addClass("hide_div");
+        $(".summary-scholar").addClass("hide_div");
+        $(".summary-expert").addClass("hide_div");
+           $(".politics").removeClass("hide_div");
+           $("#end_quiz").removeClass("hide_div");
+           $(".right-timeline").addClass("hide_div");
+        nextQuestions();
+       })
+       $("#next_sum2").click(function(){
+        $("#right-side_two").removeClass("hidden-xs");
+        $(".lefty").addClass("hide_div");
+        $(".lefto").removeClass("hide_div");
+        $(".containea").removeClass("hide_div");
+        $(".lifeline").removeClass("hide_div");
+        $(".summary").addClass("hide_div");
+        $(".summary-scholar").addClass("hide_div");
+        $(".summary-expert").addClass("hide_div");
+           $(".politics").removeClass("hide_div");
+           $("#end_quiz").removeClass("hide_div");
+           $(".right-timeline").addClass("hide_div");
+        nextQuestions();
+       })
+ })
+ $(document).ready(function(){
     $("#end_quiz").click(function(){
      $("#right-side_two").addClass("hidden-xs");
      $(".lefto").addClass("hide_div");
      $(".lefty").removeClass("hide_div");
+     $("#select").addClass("hidden");
+     $("#instructions").removeClass("hide_div");
      $(".containea").addClass("hide_div");
      $(".lifeline").addClass("hide_div");
+     resetScore();
      
     })
    
     
+ })
+ $(document).ready(function(){
+    $("#end_sum").click(function(){
+     $("#right-side_two").addClass("hidden-xs");
+     $(".lefto").addClass("hide_div");
+     $(".lefty").removeClass("hide_div");
+     $("#select").addClass("hidden");
+     $("#instructions").removeClass("hide_div");
+     $(".containea").addClass("hide_div");
+     $(".summary").addClass("hide_div");
+     $(".summary-scholar").addClass("hide_div");
+     $(".summary-expert").addClass("hide_div");
+     $(".politics").removeClass("hide_div");
+     $(".lifeline").addClass("hide_div");
+     resetScore();
+     
+    })
+    $("#end_sum1").click(function(){
+        $("#right-side_two").addClass("hidden-xs");
+        $(".lefto").addClass("hide_div");
+        $(".lefty").removeClass("hide_div");
+        $("#select").addClass("hidden");
+        $("#instructions").removeClass("hide_div");
+        $(".containea").addClass("hide_div");
+        $(".summary").addClass("hide_div");
+        $(".summary-scholar").addClass("hide_div");
+        $(".summary-expert").addClass("hide_div");
+        $(".politics").removeClass("hide_div");
+        $(".lifeline").addClass("hide_div");
+        resetScore();
+        
+       })
+       $("#end_sum2").click(function(){
+        $("#right-side_two").addClass("hidden-xs");
+        $(".lefto").addClass("hide_div");
+        $(".lefty").removeClass("hide_div");
+        $("#select").addClass("hidden");
+        $("#instructions").removeClass("hide_div");
+        $(".containea").addClass("hide_div");
+        $(".summary").addClass("hide_div");
+        $(".summary-scholar").addClass("hide_div");
+        $(".summary-expert").addClass("hide_div");
+        $(".politics").removeClass("hide_div");
+        $(".lifeline").addClass("hide_div");
+        resetScore();
+        
+       })
  })
 
 $(document).ready(function(){
@@ -37,7 +140,6 @@ $(document).ready(function(){
     nextQuestions();
    })
    $('#pol').click(function(){
-    alert('hi');
     var nameInput = $("#nameIn").val();
     var h_name = $("#h-name");
     var hname = $('#nameing');
